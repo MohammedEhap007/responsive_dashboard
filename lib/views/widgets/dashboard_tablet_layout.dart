@@ -4,8 +4,8 @@ import 'package:responsive_dashboard_app/views/widgets/custom_drawer.dart';
 import 'package:responsive_dashboard_app/views/widgets/income_section.dart';
 import 'package:responsive_dashboard_app/views/widgets/my_cards_and_transaction_history_section.dart';
 
-class DashboardDesktopLayout extends StatelessWidget {
-  const DashboardDesktopLayout({super.key});
+class DashboardTabletLayout extends StatelessWidget {
+  const DashboardTabletLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,30 +18,25 @@ class DashboardDesktopLayout extends StatelessWidget {
           width: 32,
         ),
         Expanded(
-          flex: 2,
-          child: AllExpensesAndQuickInvoiceSection(),
+          flex: 3,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                AllExpensesAndQuickInvoiceSection(),
+                SizedBox(
+                  height: 24,
+                ),
+                MyCardsAndTransactionHistorySection(),
+                SizedBox(
+                  height: 24,
+                ),
+                IncomeSection(),
+              ],
+            ),
+          ),
         ),
         SizedBox(
-          width: 24,
-        ),
-        Expanded(
-          child: Column(
-            children: [
-              SizedBox(
-                height: 40,
-              ),
-              MyCardsAndTransactionHistorySection(),
-              SizedBox(
-                height: 24,
-              ),
-              Expanded(
-                child: IncomeSection(),
-              ),
-              SizedBox(
-                height: 32,
-              ),
-            ],
-          ),
+          width: 32,
         ),
       ],
     );
