@@ -18,30 +18,44 @@ class DashboardDesktopLayout extends StatelessWidget {
           width: 32,
         ),
         Expanded(
-          flex: 2,
-          child: Padding(
-            padding: EdgeInsets.only(top: 40.0),
-            child: AllExpensesAndQuickInvoiceSection(),
-          ),
-        ),
-        SizedBox(
-          width: 24,
-        ),
-        Expanded(
-          child: Column(
-            children: [
-              SizedBox(
-                height: 40,
-              ),
-              MyCardsAndTransactionHistorySection(),
-              SizedBox(
-                height: 24,
-              ),
-              Expanded(
-                child: IncomeSection(),
-              ),
-              SizedBox(
-                height: 32,
+          flex: 3,
+          child: CustomScrollView(
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 40.0),
+                        child: AllExpensesAndQuickInvoiceSection(),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 24,
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: 40,
+                          ),
+                          MyCardsAndTransactionHistorySection(),
+                          SizedBox(
+                            height: 24,
+                          ),
+                          Expanded(
+                            child: IncomeSection(),
+                          ),
+                          SizedBox(
+                            height: 32,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
