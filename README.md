@@ -1,16 +1,15 @@
-# responsive_dashboard_app
+# Responsive & Adaptive Dashboard UI 📱🖥️
 
-A new Flutter project.
+## Description
+A modern, fully responsive, and adaptive dashboard UI built using Flutter. This project demonstrates how to create an adaptive UI that works seamlessly on desktop, tablet, and mobile devices.
 
-## Getting Started
+## Features
+- Adjusts layout dynamically for different screen sizes.
+- Fully functional UI for large screens.
+- MediaQuery, LayoutBuilder and more for responsiveness.
 
-This project is a starting point for a Flutter application.
+## Video Preview
+https://github.com/user-attachments/assets/2a9aa50d-2d59-4908-8207-e447963e05f5
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
