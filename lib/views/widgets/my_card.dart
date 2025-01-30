@@ -14,6 +14,7 @@ class MyCard extends StatelessWidget {
         decoration: ShapeDecoration(
           color: const Color(0XFF4EB7F2),
           image: const DecorationImage(
+            fit: BoxFit.fill,
             image: AssetImage(Assets.imagesCardBackground),
           ),
           shape: RoundedRectangleBorder(
@@ -53,9 +54,6 @@ class MyCard extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  const SizedBox(
-                    height: 12,
-                  ),
                   Text(
                     '12/20 - 124',
                     style: AppStyles.styleRegular16(context).copyWith(
@@ -65,8 +63,10 @@ class MyCard extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 27,
+            const Flexible(
+              child: SizedBox(
+                height: 27,
+              ),
             )
           ],
         ),
