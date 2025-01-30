@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:responsive_dashboard_app/models/drawer_item_model.dart';
-import 'package:responsive_dashboard_app/utils/styles.dart';
+import 'package:responsive_dashboard_app/utils/app_styles.dart';
 
 class ActiveDrawerItem extends StatelessWidget {
   const ActiveDrawerItem({
@@ -17,7 +17,7 @@ class ActiveDrawerItem extends StatelessWidget {
       leading: SvgPicture.asset(drawerItemModel.image),
       title: Text(
         drawerItemModel.title,
-        style: Styles.styleBold16,
+        style: AppStyles.styleBold16(context),
       ),
       trailing: Container(
         width: 3.25,

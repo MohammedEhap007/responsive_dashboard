@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard_app/models/all_expenses_item_model.dart';
-import 'package:responsive_dashboard_app/utils/styles.dart';
+import 'package:responsive_dashboard_app/utils/app_styles.dart';
 import 'package:responsive_dashboard_app/views/widgets/all_expenses_item_header.dart';
 
 class InActiveAllExpensesItem extends StatelessWidget {
@@ -39,21 +39,21 @@ class InActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             allExpensesItemModel.title,
-            style: Styles.styleMedium16,
+            style: AppStyles.styleMedium16(context),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             allExpensesItemModel.date,
-            style: Styles.styleRegular14,
+            style: AppStyles.styleRegular14(context),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
             allExpensesItemModel.price,
-            style: Styles.styleSemiBold24,
+            style: AppStyles.styleSemiBold24(context),
           ),
         ],
       ),

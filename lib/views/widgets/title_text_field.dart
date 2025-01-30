@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard_app/utils/styles.dart';
+import 'package:responsive_dashboard_app/utils/app_styles.dart';
 import 'package:responsive_dashboard_app/views/widgets/custom_text_field.dart';
 
 class TitleTextField extends StatelessWidget {
@@ -18,7 +18,7 @@ class TitleTextField extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Styles.styleMedium16,
+          style: AppStyles.styleMedium16(context),
         ),
         const SizedBox(
           height: 12,

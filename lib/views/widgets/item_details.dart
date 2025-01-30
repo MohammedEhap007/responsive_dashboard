@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard_app/models/item_details_model.dart';
-import 'package:responsive_dashboard_app/utils/styles.dart';
+import 'package:responsive_dashboard_app/utils/app_styles.dart';
 
 class ItemDetails extends StatelessWidget {
   const ItemDetails({
@@ -22,11 +22,11 @@ class ItemDetails extends StatelessWidget {
       ),
       title: Text(
         itemDetailsModel.title,
-        style: Styles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
       trailing: Text(
         itemDetailsModel.value,
-        style: Styles.styleMedium16,
+        style: AppStyles.styleMedium16(context),
       ),
     );
   }

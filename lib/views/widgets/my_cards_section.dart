@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard_app/utils/styles.dart';
+import 'package:responsive_dashboard_app/utils/app_styles.dart';
 import 'package:responsive_dashboard_app/views/widgets/dots_indicator.dart';
 import 'package:responsive_dashboard_app/views/widgets/my_cards_page_view.dart';
 
@@ -31,9 +31,9 @@ class _MyCardsSectionState extends State<MyCardsSection> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+        Text(
           'My Card',
-          style: Styles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         const SizedBox(
           height: 20,

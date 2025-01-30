@@ -1,6 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard_app/utils/styles.dart';
+import 'package:responsive_dashboard_app/utils/app_styles.dart';
 
 class DetailedIncomeChart extends StatefulWidget {
   const DetailedIncomeChart({super.key});
@@ -34,7 +34,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
       sections: [
         PieChartSectionData(
           title: activeIndex == 0 ? 'Design service' : '40%',
-          titleStyle: Styles.styleMedium16.copyWith(
+          titleStyle: AppStyles.styleMedium16(context).copyWith(
             color: activeIndex == 0 ? null : Colors.white,
           ),
           titlePositionPercentageOffset: activeIndex == 0 ? 1.45 : null,
@@ -44,7 +44,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
         ),
         PieChartSectionData(
           title: activeIndex == 1 ? 'Design product' : '25%',
-          titleStyle: Styles.styleMedium16.copyWith(
+          titleStyle: AppStyles.styleMedium16(context).copyWith(
             color: activeIndex == 1 ? null : Colors.white,
           ),
           titlePositionPercentageOffset: activeIndex == 1 ? 2.15 : null,
@@ -54,7 +54,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
         ),
         PieChartSectionData(
           title: activeIndex == 2 ? 'Product royalty' : '20%',
-          titleStyle: Styles.styleMedium16.copyWith(
+          titleStyle: AppStyles.styleMedium16(context).copyWith(
             color: activeIndex == 2 ? null : Colors.white,
           ),
           titlePositionPercentageOffset: activeIndex == 2 ? 1.35 : null,
@@ -64,7 +64,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
         ),
         PieChartSectionData(
           title: activeIndex == 3 ? 'Other' : '22%',
-          titleStyle: Styles.styleMedium16.copyWith(
+          titleStyle: AppStyles.styleMedium16(context).copyWith(
             color: activeIndex == 3 ? null : Colors.white,
           ),
           titlePositionPercentageOffset: activeIndex == 3 ? 1.45 : null,
